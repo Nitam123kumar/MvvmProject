@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:layout_margin="20dp"
+    android:layout_marginTop="25dp"
+    tools:context=".ProductDetailsActivity">
+
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        android:padding="10dp"
+        android:src="@drawable/img_5" />
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Nike Sneakers"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <!-- Rating Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="4.5 ★"
+            android:textColor="#FFD600"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="56,890 reviews"
+            android:textColor="#D1CFCF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Price Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/originalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="₹2,993"
+            />
+
+        <TextView
+            android:id="@+id/discountPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹1,500"
+            android:textColor="#DD2C00"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="(50% OFF)"
+            android:textColor="#00C853"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Product Details -->
+
+    <TextView
+        android:id="@+id/productDetails1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Product Details"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/goToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginHorizontal="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bynow"
+            />
+
+        <ImageView
+            android:id="@+id/buyNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/gotocard"
+            />
+    </LinearLayout>
+
+    <!-- Delivery Info -->
+    <TextView
+        android:id="@+id/deliveryInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#FFCCD5"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Delivery in 1 Hour"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
