@@ -58,5 +58,7 @@ dependencies {
 
     implementation (libs.glide)
     implementation (libs.checkout)
+    implementation (libs.image.labeling)
+
 
 }

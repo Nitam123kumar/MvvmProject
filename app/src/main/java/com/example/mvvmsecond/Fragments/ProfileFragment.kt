@@ -13,12 +13,14 @@ import com.example.mvvmsecond.AllViewModel.GetUserViewModel
 import com.example.mvvmsecond.ProfileEditActivity
 import com.example.mvvmsecond.R
 import com.example.mvvmsecond.databinding.FragmentProfileBinding
+import com.google.firebase.auth.FirebaseAuth
 
 
 class ProfileFragment : Fragment() {
         lateinit var binding: FragmentProfileBinding
         lateinit var viewModel: GetUserViewModel
         var list=ArrayList<UserProfileDataModel>()
+    val auth = FirebaseAuth.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -52,6 +54,9 @@ class ProfileFragment : Fragment() {
             intent.putExtra("email",binding.profileEmailTV.text.toString())
             intent.putExtra("image",list[0].image)
             startActivity(intent)
+        }
+        binding.logoutLinearLayout.setOnClickListener {
+            auth.signOut()
         }
 
         return view

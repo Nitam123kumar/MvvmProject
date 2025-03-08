@@ -8,9 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.mvvmsecond.AllDataModel.AddToCartDataModel
+import com.example.mvvmsecond.AllInterface.DeleteCartItem
 import com.example.mvvmsecond.R
 
-class CartAdapter(val list:ArrayList<AddToCartDataModel>): RecyclerView.Adapter<CartAdapter.CartViewHolder>() {
+class CartAdapter(val list:ArrayList<AddToCartDataModel>,val deleteCartItem: DeleteCartItem): RecyclerView.Adapter<CartAdapter.CartViewHolder>() {
     class CartViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView){
 
         val image = itemView.findViewById<ImageView>(R.id.cartImageView)
@@ -37,8 +38,7 @@ class CartAdapter(val list:ArrayList<AddToCartDataModel>): RecyclerView.Adapter<
         holder.description.text = item.cartDescription
         Glide.with(holder.itemView.context).load(item.cartImage).into(holder.image)
         holder.delete.setOnClickListener {
-            list.removeAt(position)
-            notifyDataSetChanged()
+           deleteCartItem.deleteItem(position,item)
         }
 
     }

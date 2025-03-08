@@ -31,7 +31,7 @@
                         android:id="@+id/cartImageView"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerCrop"
                         android:src="@drawable/img_5" />
 
                 </androidx.cardview.widget.CardView>
@@ -58,13 +58,14 @@
                         android:layout_height="wrap_content"
                         android:text="Neque porro quisquam est qui"
                         android:textColor="@color/black"
+                        android:padding="4dp"
                         android:textSize="15dp" />
 
                     <TextView
                         android:id="@+id/cartPriceTV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="8dp"
+                        android:padding="4dp"
                         android:text="₹1500"
                         android:maxLength="24"
                         android:textColor="@color/black"
@@ -78,6 +79,7 @@
                         android:layout_height="wrap_content"
                         android:isIndicator="true"
                         android:numStars="5"
+                        android:padding="4dp"
                         android:layout_marginTop="4dp"
                         android:progressBackgroundTint="#EDB310"
                         android:stepSize="0.1" />
@@ -99,6 +101,7 @@
                     android:gravity="center"
                     android:textSize="16dp"
                     android:layout_marginTop="5dp"
+                    android:textStyle="bold"
                     android:textColor="@color/black"
                     android:text="Remove"/>
 
