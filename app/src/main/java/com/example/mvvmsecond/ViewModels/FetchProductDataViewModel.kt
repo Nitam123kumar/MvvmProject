@@ -16,7 +16,7 @@ class FetchProductDataViewModel: ViewModel() {
 
 
     fun fetchData(context: Context){
-        db.getReference("mvvmProducts").addValueEventListener(object : ValueEventListener {
+        db.getReference("mvvmProducts").child("products").addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val list = ArrayList<UpLoadProductDataModel>()
                 for (data in snapshot.children){

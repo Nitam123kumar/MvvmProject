@@ -37,6 +37,9 @@ class ProductDetailsActivity : AppCompatActivity() {
                 productDescription!!,
                 productImage!!
             )
+            onResume().apply {
+                finish()
+            }
         }
 
         binding.buyNow.setOnClickListener {

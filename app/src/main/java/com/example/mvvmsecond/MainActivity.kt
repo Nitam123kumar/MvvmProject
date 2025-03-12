@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val showFragment=intent.getStringExtra("showFragment")
+        val showFragment=intent.getStringExtra("showFragment")?:""
 
-        if (showFragment!!.isNotEmpty()){
+        if (showFragment.isNotEmpty()){
             loadFragment(CartFragment())
         }
         else{

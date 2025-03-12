@@ -45,6 +45,7 @@ class ProductDetailsViewModel : ViewModel() {
                 val intent = Intent(context, MainActivity::class.java)
                     intent.putExtra("showFragment","showFragment")
                 context.startActivity(intent)
+
             }
             .addOnFailureListener {
                 Toast.makeText(context, "AddToCart Failed", Toast.LENGTH_SHORT).show()

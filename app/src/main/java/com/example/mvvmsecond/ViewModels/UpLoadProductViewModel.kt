@@ -28,7 +28,7 @@ class UpLoadProductViewModel:ViewModel() {
         HashMap["productDescription"] = productDescription
         HashMap["productImage"] = productImage
 
-        db.getReference("mvvmProducts").child(randomId).setValue(HashMap)
+        db.getReference("mvvmProducts").child("products").child(randomId).setValue(HashMap)
             .addOnSuccessListener {
                 Toast.makeText(context, "Insert Success", Toast.LENGTH_SHORT).show()
             }
