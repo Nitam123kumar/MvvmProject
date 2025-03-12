@@ -1,11 +1,13 @@
 package com.example.mvvmsecond.AllViewModel
 
 import android.content.Context
+import android.content.Intent
 import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.mvvmsecond.AllDataModel.AddToCartDataModel
 import com.example.mvvmsecond.AllDataModel.UpLoadProductDataModel
+import com.example.mvvmsecond.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import java.util.UUID
@@ -41,6 +43,9 @@ class ProductDetailsViewModel : ViewModel() {
                     cartImage = productImage
                 )
                 Toast.makeText(context, "AddToCart Success", Toast.LENGTH_SHORT).show()
+                val intent = Intent(context, MainActivity::class.java)
+                    intent.putExtra("showFragment","showFragment")
+                context.startActivity(intent)
             }
             .addOnFailureListener {
                 Toast.makeText(context, "AddToCart Failed", Toast.LENGTH_SHORT).show()

@@ -18,8 +18,16 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        val showFragment=intent.getStringExtra("showFragment")
+
+        if (showFragment!!.isNotEmpty()){
+            loadFragment(CartFragment())
+        }
+        else{
+            loadFragment(ProductFragment())
+        }
+
         buttonNavigationView = findViewById(R.id.bottom_navigation)!!
-        loadFragment(ProductFragment())
 
         buttonNavigationView.setOnItemSelectedListener { item ->
 
