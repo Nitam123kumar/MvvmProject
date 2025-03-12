@@ -1,11 +1,11 @@
-package com.example.mvvmsecond.AllViewModel
+package com.example.mvvmsecond.ViewModels
 
 import android.content.Context
 import android.net.Uri
 import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.mvvmsecond.AllDataModel.UserProfileDataModel
+import com.example.mvvmsecond.DataModels.UserProfileDataModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage

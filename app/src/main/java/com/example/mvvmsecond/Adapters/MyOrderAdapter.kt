@@ -1,4 +1,4 @@
-package com.example.mvvmsecond.AllAdapters
+package com.example.mvvmsecond.Adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.mvvmsecond.AllDataModel.MyOrderDataModel
+import com.example.mvvmsecond.DataModels.MyOrderDataModel
 import com.example.mvvmsecond.R
 
 class MyOrderAdapter(private val list: List<MyOrderDataModel>): RecyclerView.Adapter<MyOrderAdapter.MyOrderViewHolder>()  {

@@ -1,4 +1,4 @@
-package com.example.mvvmsecond.AllDataModel
+package com.example.mvvmsecond.DataModels
 
 data class AddToCartDataModel(
     var cartId: String? = "",

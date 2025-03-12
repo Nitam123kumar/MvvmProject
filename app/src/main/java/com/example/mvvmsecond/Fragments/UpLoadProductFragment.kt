@@ -11,7 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.example.mvvmsecond.AllViewModel.UpLoadProductViewModel
+import com.example.mvvmsecond.ViewModels.UpLoadProductViewModel
 import com.example.mvvmsecond.R
 import com.example.mvvmsecond.databinding.FragmentUpLoadProductBinding
 import com.google.mlkit.vision.common.InputImage

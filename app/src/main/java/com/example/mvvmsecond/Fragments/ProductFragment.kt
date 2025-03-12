@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.mvvmsecond.AllAdapters.HomeProductAdapter
-import com.example.mvvmsecond.AllDataModel.UpLoadProductDataModel
-import com.example.mvvmsecond.AllViewModel.FetchProductDataViewModel
+import com.example.mvvmsecond.Adapters.HomeProductAdapter
+import com.example.mvvmsecond.DataModels.UpLoadProductDataModel
+import com.example.mvvmsecond.ViewModels.FetchProductDataViewModel
 import com.example.mvvmsecond.databinding.FragmentProductBinding
 
 

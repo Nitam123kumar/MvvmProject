@@ -8,10 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.mvvmsecond.AllAdapters.MyOrderAdapter
-import com.example.mvvmsecond.AllDataModel.MyOrderDataModel
-import com.example.mvvmsecond.AllViewModel.MyOrderGetViewModel
-import com.example.mvvmsecond.R
+import com.example.mvvmsecond.Adapters.MyOrderAdapter
+import com.example.mvvmsecond.DataModels.MyOrderDataModel
+import com.example.mvvmsecond.ViewModels.MyOrderGetViewModel
 import com.example.mvvmsecond.databinding.FragmentMyOrderBinding
 
 

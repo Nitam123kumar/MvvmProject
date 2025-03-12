@@ -1,9 +1,9 @@
-package com.example.mvvmsecond.AllViewModel
+package com.example.mvvmsecond.ViewModels
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.mvvmsecond.AllDataModel.MyOrderDataModel
+import com.example.mvvmsecond.DataModels.MyOrderDataModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

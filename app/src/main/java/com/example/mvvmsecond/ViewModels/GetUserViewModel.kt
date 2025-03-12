@@ -1,8 +1,8 @@
-package com.example.mvvmsecond.AllViewModel
+package com.example.mvvmsecond.ViewModels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.mvvmsecond.AllDataModel.UserProfileDataModel
+import com.example.mvvmsecond.DataModels.UserProfileDataModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

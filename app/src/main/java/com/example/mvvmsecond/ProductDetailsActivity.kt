@@ -4,11 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
-import com.example.mvvmsecond.AllViewModel.ProductDetailsViewModel
+import com.example.mvvmsecond.ViewModels.ProductDetailsViewModel
 import com.example.mvvmsecond.databinding.ActivityProductDetialsBinding
 
 class ProductDetailsActivity : AppCompatActivity() {
@@ -32,19 +30,22 @@ class ProductDetailsActivity : AppCompatActivity() {
         Glide.with(this).load(productImage).into(binding.productImage)
 
         binding.goToCart.setOnClickListener {
-            viewModel.addToCart(this,productTittle!!,productPrice!!,productDescription!!,productImage!!)
+            viewModel.addToCart(
+                this,
+                productTittle!!,
+                productPrice!!,
+                productDescription!!,
+                productImage!!
+            )
         }
 
         binding.buyNow.setOnClickListener {
-            val intent = Intent(this,PaymentActivity::class.java)
-            intent.putExtra("tittle",productTittle)
-            intent.putExtra("price",productPrice)
-            intent.putExtra("description",productDescription)
-            intent.putExtra("image",productImage)
+            val intent = Intent(this, PaymentActivity::class.java)
+            intent.putExtra("tittle", productTittle)
+            intent.putExtra("price", productPrice)
+            intent.putExtra("description", productDescription)
+            intent.putExtra("image", productImage)
             startActivity(intent)
         }
-
-
-
     }
 }

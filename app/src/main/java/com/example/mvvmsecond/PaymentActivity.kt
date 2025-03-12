@@ -1,23 +1,17 @@
 package com.example.mvvmsecond
 
-import android.app.Activity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
-import com.example.mvvmsecond.AllViewModel.PaymentViewModel
+import com.example.mvvmsecond.ViewModels.PaymentViewModel
 import com.example.mvvmsecond.databinding.ActivityPementBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import com.razorpay.Checkout
 import com.razorpay.PaymentData
 import com.razorpay.PaymentResultWithDataListener
-import org.json.JSONException
-import org.json.JSONObject
 import java.util.UUID
 
 class PaymentActivity : AppCompatActivity(), PaymentResultWithDataListener {

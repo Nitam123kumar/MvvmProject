@@ -8,10 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
-import com.example.mvvmsecond.AllDataModel.UserProfileDataModel
-import com.example.mvvmsecond.AllViewModel.GetUserViewModel
+import com.example.mvvmsecond.DataModels.UserProfileDataModel
+import com.example.mvvmsecond.ViewModels.GetUserViewModel
 import com.example.mvvmsecond.ProfileEditActivity
-import com.example.mvvmsecond.R
 import com.example.mvvmsecond.databinding.FragmentProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 

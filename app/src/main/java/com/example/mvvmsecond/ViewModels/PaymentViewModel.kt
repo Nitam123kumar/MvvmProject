@@ -1,13 +1,11 @@
-package com.example.mvvmsecond.AllViewModel
+package com.example.mvvmsecond.ViewModels
 
 import android.app.Activity
 import android.widget.Toast
 import androidx.lifecycle.ViewModel
-import com.google.firebase.database.FirebaseDatabase
 import com.razorpay.Checkout
 import org.json.JSONException
 import org.json.JSONObject
-import java.util.UUID
 
 class PaymentViewModel: ViewModel() {
 

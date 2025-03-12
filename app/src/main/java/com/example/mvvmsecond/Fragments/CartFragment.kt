@@ -9,10 +9,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.mvvmsecond.AllAdapters.CartAdapter
-import com.example.mvvmsecond.AllDataModel.AddToCartDataModel
-import com.example.mvvmsecond.AllInterface.DeleteCartItem
-import com.example.mvvmsecond.AllViewModel.FetchCartDataViewModel
+import com.example.mvvmsecond.Adapters.CartAdapter
+import com.example.mvvmsecond.DataModels.AddToCartDataModel
+import com.example.mvvmsecond.Interface.DeleteCartItem
+import com.example.mvvmsecond.ViewModels.FetchCartDataViewModel
 import com.example.mvvmsecond.databinding.FragmentAddToCartBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase

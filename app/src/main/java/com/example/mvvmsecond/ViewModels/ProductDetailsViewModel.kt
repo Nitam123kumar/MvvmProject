@@ -1,12 +1,11 @@
-package com.example.mvvmsecond.AllViewModel
+package com.example.mvvmsecond.ViewModels
 
 import android.content.Context
 import android.content.Intent
 import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.mvvmsecond.AllDataModel.AddToCartDataModel
-import com.example.mvvmsecond.AllDataModel.UpLoadProductDataModel
+import com.example.mvvmsecond.DataModels.AddToCartDataModel
 import com.example.mvvmsecond.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
